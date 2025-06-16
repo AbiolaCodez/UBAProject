@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+header{
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1000;
+}
+nav{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.left-side{
+    display: flex;
+    margin: auto;
+}
+.bars{
+    display: none;
+}
+.padlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    border-radius: 5px;
+    padding: 2px 6px;
+    background-color: #BF0B04;
+    color: bisque;
+    border: none;
+}
+.fa-house{
+    display: flex;
+    color: #BF0B04;
+}
+.header-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap: 1em;
+}
+.header-link a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+}
+.right-side{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.right-side-img{
+    width: 100px;
+}
+.fa-magnifying-glass{
+    text-align: center;
+}
+@media(max-width:768px){
+    .bars{
+        display: block;
+    }
+    .padlock{
+        display: none;
+    }
+    .header-link{
+        display: none;
+    }
+    .header-link a{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .magnifying-glass{
+        display: none;
+    }
+    .right-side .right-side-img{
+        display: flex;
+        text-align: left;
+    }
+}
+.hero{
+    position: relative;
+    background-image: url(../images/world-political-maps.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 10%;
+  justify-content: space-between;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+}
+.contact-info h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin: 12px 0;
+  color: #333;
+} 
+.contact-info i {
+  color: #cc0000;
+  margin-right: 10px;
+}
+
+.contact-form {
+  flex: 5;
+  min-width: 300px;
+  max-width: 600px;
+}
+.contact-form h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+input-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+.input-group input,
+.input-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.send-btn{
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #BF0B04;
+    color: white;
+    padding: 5px;
+}
+.top-banner {
+  display: flex;
+  background-color: #cc0000;
+  color: white;
+  justify-content: space-around;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1.5em;
+}
+.banner-item {
+  flex: 1;
+  font-weight: bold;
+}
+.banner-item a{
+  text-decoration: none;
+  color: white;
+}
+.footer{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+    color: #333;
+    font-size: 14px;
+}
+.footer-section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+    font-size: 14px;
+    color: #333;
+}
+.footer-column{
+    margin: 10px;
+    flex: 1 1 180px;
+}
+.footer-column h4{
+    color: black;
+    margin-bottom: 10px;
+}
+.footer-column ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-column ul li{
+    margin-bottom: 8px;
+}
+.footer-column ul li a{
+    text-decoration: none;
+    color: grey;
+}
+.image-footer{
+    width: 100px;
+    cursor: pointer;
+}
+.text-footer{
+    display: flex; 
+}
+.fb{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.fb:hover{
+    background-color: #a71d2a;
+}
+.footer-text1{
+    background-color: #222;
+    padding: 20px;
+}
+.footer-text1 p{
+    color: white;
+}
+.footer-link{
+    text-decoration: none;
+    color: white;
+}

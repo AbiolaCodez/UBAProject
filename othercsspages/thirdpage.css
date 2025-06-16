@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+header{
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1000;
+}
+nav{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.left-side{
+    display: flex;
+    margin: auto;
+}
+.bars{
+    display: none;
+}
+.padlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    border-radius: 5px;
+    padding: 2px 6px;
+    background-color: #BF0B04;
+    color: bisque;
+    border: none;
+}
+.fa-house{
+    display: flex;
+    color: #BF0B04;
+}
+.header-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap: 1em;
+}
+.header-link a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+}
+.right-side{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.right-side-img{
+    width: 100px;
+}
+.fa-magnifying-glass{
+    text-align: center;
+}
+@media(max-width:768px){
+    .bars{
+        display: block;
+    }
+    .padlock{
+        display: none;
+    }
+    .header-link{
+        display: none;
+    }
+    .header-link a{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .magnifying-glass{
+        display: none;
+    }
+    .right-side .right-side-img{
+        display: flex;
+        text-align: left;
+    }
+}
+.hero{
+    position: relative;
+    background-image: url('../images/trade.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+.hero .overalayss{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    top: 30%;
+    left: 10%;
+    max-width: 600px;
+    color: white;
+    max-width: 600px;
+}
+.hero h1{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+}
+.hero p{
+    color: white;
+}
+.tradeinfo{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 40px 20px;
+}
+.tradeinfo h2{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.tradeinfo p{
+    font-size: 15px;
+}
+.tradeinfo .country{
+    color: red;
+    font-weight: bold;
+}
+.country-section{
+    background-image: url('../images/UBA-Group-Slider-3_.jpg');
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.country-section:before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+/* .overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    max-width: 120px;
+    margin: 0 auto;
+    border-radius: 10px;
+} */
+.overlay h2{
+    position: relative;
+    font-size: 28px;
+    z-index: 1;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.country-grid{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    justify-items: start;
+    z-index: 1;
+}
+.country{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+.country img{
+    width: 25px;
+    height: auto;
+    border-radius: 3px;
+}
+.footer{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+    color: #333;
+    font-size: 14px;
+}
+.footer-section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+    font-size: 14px;
+    color: #333;
+}
+.footer-column{
+    margin: 10px;
+    flex: 1 1 180px;
+}
+.footer-column h4{
+    color: black;
+    margin-bottom: 10px;
+}
+.footer-column ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-column ul li{
+    margin-bottom: 8px;
+}
+.footer-column ul li a{
+    text-decoration: none;
+    color: grey;
+}
+.image-footer{
+    width: 100px;
+    cursor: pointer;
+}
+.text-footer{
+    display: flex; 
+}
+.fb{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.fb:hover{
+    background-color: #a71d2a;
+}
+.footer-text1{
+    background-color: #222;
+    padding: 20px;
+}
+.footer-text1 p{
+    color: white;
+}
+.footer-link{
+    text-decoration: none;
+    color: white;
+}
